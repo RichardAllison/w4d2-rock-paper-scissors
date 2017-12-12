@@ -10,6 +10,10 @@ class RockPaperScissorsGame
       return 'Paper wins!'
     elsif (@move1 == 'rock' && @move2 == 'scissors') || (@move1 == 'scissors' && @move2 == 'rock')
       return 'Rock wins!'
+    elsif @move1 == 'rock' && @move2 == 'rock'
+      return 'It\'s a draw!'
+    elsif (@move1 == 'scissors' && @move2 == 'paper') || (@move1 == 'paper' && @move2 == 'scissors')
+      return 'Scissors win!'
     end
   end
 
