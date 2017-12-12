@@ -1,5 +1,7 @@
-<% if @result == "player 1!" || @result == "player 2!" %>
-<h1>And the winner is... <%= @result %> </h1>
+<% if @result == "player 1" %>
+<h1>And the winner is... <%= @result %> by playing <%=@move1%>!</h1>
+<% elsif @result == "player 2" %>
+<h1>And the winner is... <%= @result %> by playing <%=@move2%>!</h1>
 <% else %>
 <h1><%=@result%></h1>
 <% end %>
