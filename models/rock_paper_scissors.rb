@@ -8,13 +8,13 @@ class RockPaperScissorsGame
   def play()
     if (@move1 == 'rock' || @move1 == 'paper' || @move1 == 'scissors') && (@move2 == 'rock' || @move2 == 'paper' || @move2 == 'scissors')
       if (@move1 == 'rock' && @move2 == 'paper') || (@move1 == 'paper' && @move2 == 'rock')
-        return 'Paper wins!'
+        return 'paper!'
       elsif (@move1 == 'rock' && @move2 == 'scissors') || (@move1 == 'scissors' && @move2 == 'rock')
-        return 'Rock wins!'
+        return 'rock!'
       elsif @move1 == 'rock' && @move2 == 'rock'
         return 'It\'s a draw!'
       elsif (@move1 == 'scissors' && @move2 == 'paper') || (@move1 == 'paper' && @move2 == 'scissors')
-        return 'Scissors win!'
+        return 'scissors!'
       elsif @move1 == 'scissors' && @move2 == 'scissors'
         return 'It\'s a draw!'
       elsif @move1 == 'paper' && @move2 == 'paper'
