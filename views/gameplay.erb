@@ -1,1 +1,5 @@
+<% if @result == 'rock!' || @result == 'paper!' || @result == 'scissors!' %>
 <h1>And the winner is... <%= @result %> </h1>
+<% else %>
+<h1><%=@result%></h1>
+<% end %>

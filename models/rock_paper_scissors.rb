@@ -21,11 +21,11 @@ class RockPaperScissorsGame
         return 'It\'s a draw!'
       end
     elsif (@move1 == 'rock' || @move1 == 'paper' || @move1 == 'scissors')
-      return "#{@move2.capitalize()} is not a valid move"
+      return "#{@move2.capitalize()} is not a valid move!"
     elsif (@move2 == 'rock' || @move2 == 'paper' || @move2 == 'scissors')
-      return "#{@move1.capitalize()} is not a valid move"
+      return "#{@move1.capitalize()} is not a valid move!"
     else
-      return "Neither #{@move1} nor #{@move2} is a valid move!"
+      return "Neither move is valid!"
     end
 
   end
